@@ -74,3 +74,15 @@ function addPagination(list) {
 // Call functions
 showPage(data, 1);
 addPagination(data);
+
+// Add a search component
+const searchBarLocation = document.querySelector(".header");
+// console.log(searchBarLocation);
+const label = document.createElement("label");
+label.setAttribute("for", "search");
+label.className = "student-search";
+label.innerHTML = `<span>Search by name</span>
+                   <input id="search" placeholder="Search by name...">
+                   <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>`;
+console.log(label);
+searchBarLocation.append(label);
