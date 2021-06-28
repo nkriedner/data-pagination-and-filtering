@@ -88,7 +88,6 @@ searchInput.addEventListener("keyup", () => {
     searchStudents();
 });
 button.addEventListener("click", () => {
-    console.log("CLICK");
     searchStudents();
 });
 
